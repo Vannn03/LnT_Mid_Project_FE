@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #1e1e1e;
+    background-image: url(https://images.pexels.com/photos/572897/pexels-photo-572897.jpeg?auto=compress&cs=tinysrgb&w=1600);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 0.9;
+
+}
+
+input {
+    height: 25px;
+}
+
+input, textarea {
+    outline: none !important;
+    border: none !important;
+    font-size: 14px;
+    font-family: 'Poppins';
+    width: 335px;
+    background-color: #FAFAFA;
+}
+
+form {
+    width: 40vh;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 19vh;
+    border: 1px solid #FAFAFA;
+    background-color: #FAFAFA;
+    box-shadow: 0px 8px 24px grey;
+    padding: 10px 35px 110px 35px;
+    border-radius: 5px;
+    animation-name: form;
+    animation-duration: 1s;
+}
+@keyframes form {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+form h2 {
+    text-align: center;
+    font-size: 28px;
+    letter-spacing: 0.1em;
+}
+
+form .textfields {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+form .buttons {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 25px;
+}
+
+form .buttons button {
+    padding: 13px 35px;
+    border-radius: 5px;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    font-size: 16px;
+    font-family: 'Poppins';
+    border: none !important;
+    cursor: pointer;
+}
+
+form .buttons .reset {
+    background-color: #FAFAFA;
+    color: #b87a00;
+    font-weight: 600;
+    transition: color .1s;
+}
+form .buttons .reset:hover {
+    color: #E39801;
+}
+
+form .buttons .submit {
+    transition: .5s;
+  background: linear-gradient(90deg, var(--c1, #E39801), var(--c2, #b87a00) 51%, var(--c1, #E39801)) var(--x, 0)/ 200%;
+    color: #FAFAFA;
+}
+form .buttons .submit:hover {
+    --x: 100%;
+}
