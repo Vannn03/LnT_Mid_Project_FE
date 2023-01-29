@@ -4,6 +4,7 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     color: #1e1e1e;
+    font-family: 'Poppins';
 }
 a {
     text-decoration-line: none;
