@@ -27,8 +27,8 @@ input, textarea {
 }
 
 form {
-    width: 40vh;
-    height: 50vh;
+    width: 400px;
+    height: 475px;
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -55,7 +55,7 @@ form h2 {
 form .textfields {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: .5em;
 }
 
 form .buttons {
