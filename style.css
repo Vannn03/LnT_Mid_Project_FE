@@ -26,7 +26,7 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 200px;
+    gap: 10em;
     font-size: 20px;
     margin-top: 30px; 
     animation-name: navbar;
@@ -46,7 +46,7 @@ a {
     text-decoration-line: underline;
     text-decoration-color: #E39801;
     text-decoration-thickness: 3px;
-
+    
 }
 #navbar .nav-links .about-me:active, .portofolio:active, .contact.contact:active {
     text-decoration-line: underline;
@@ -111,7 +111,6 @@ a {
     width: 180px;
     letter-spacing: 0.2em;
 }
-
 #section-two h3 {
     border: 3px solid #b87a00;
     color: #1e1e1e;
@@ -190,6 +189,7 @@ a {
 }
 .logo-image {
     display: flex;
+    flex-wrap: wrap;
     gap: 50px;
     margin-top: 25px;
 }
@@ -205,7 +205,7 @@ a {
     margin: auto;
     border-bottom: 3px solid #b87a00;
     text-align: center;
-    width: 1000px;
+    width: 50%;
     color: #1e1e1e;
     font-size: 24px;
     letter-spacing: 0.2em;
@@ -214,7 +214,7 @@ a {
     transition: width .5s,  letter-spacing .5s;
 }
 #section-three h3:hover {
-    width: 1750px;
+    width: 90%;
     letter-spacing: 0.5em;
 }
 .grid-items {
@@ -302,4 +302,24 @@ a {
     font-size: 14px;
     font-family: 'Courier New';
     padding: 5px 0px;
+}
+
+@media only screen and (max-width: 768px) {
+    #navbar .nav-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 7em;
+        font-size: 17px;
+    }
+    .hero .title #t1 {
+        font-size: 50px;
+    }
+    .hero .title #t2 {
+        font-size: 20px;
+    }
+    .grid-items {
+        gap: 40px;
+        margin-top: 40px;
+        
+    }
 }
